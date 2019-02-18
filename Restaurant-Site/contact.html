@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Modal Cafe</h1>
+    </header>
+
+    <hr />
+
+    <nav>
+      <p>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact Us</a>
+      </p>
+    </nav>
+
+    <hr />
+
+    <form action="submit.html" method="POST">
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"> <br />
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email"> <br />
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" name="phone"> <br />
+
+      <label for="inquiryReason">Reason for Inquiry:</label>
+      <select id="inquiryReason" name="inquiryReason">
+        <option value="catering" selected>Catering</option>
+        <option value="party">Private Party</option>
+        <option value="feedback">Feedback</option>
+        <option value="other">Other</option>
+      </select> <br />
+
+      <label for="additionalInfo">Additional Information</label> 
+      <textarea name="additionalInfo" rows="8" cols="80"></textarea> <br />
+
+      <fieldset>
+        <legend>Have you been to this restaurant?</legend>
+        <input type="radio" id="option1" name="beenHere" value="no">
+        <label for="option1">No</label>
+        <input type="radio" id="option2" name="beenHere" value="yes">
+        <label for="option2">Yes</label> <br />
+      </fieldset>
+
+      <fieldset>
+        <legend>Best days to contact you:</legend> <br />
+        <input type="checkbox" id="monday" name="bestDay" value="monday">
+        <label for="monday">M</label>
+        <input type="checkbox" id="tuesday" name="bestDay" value="tuesday">
+        <label for="tuesday">T</label>
+        <input type="checkbox" id="wednesday" name="bestDay" value="wednesday">
+        <label for="wednesday">W</label>
+        <input type="checkbox" id="thursday" name="bestDay" value="thursday">
+        <label for="thursday">Th</label>
+        <input type="checkbox" id="friday" name="bestDay" value="friday">
+        <label for="friday">F</label> <br />
+      </fieldset>
+
+      <input type="submit" name="submit" value="Send Request">
+    </form>
+
+    <footer>
+      <p>Glissando Drive, Plano, Texas, 75080 <br />
+        (214) 555-1337
+      </p>
+    </footer>
+
+  </body>
+</html>
