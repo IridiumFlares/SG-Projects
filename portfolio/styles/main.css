@@ -1,0 +1,65 @@
+/*
+Created by: Evan Hainlin
+Date created: 02/17/19
+Date last modified:
+*/
+body {
+    background-color: #fef9ff;
+    font-family: arial, helvetica, sans-serif;
+    color: #0C0113;
+    max-width: 900px;
+    margin: 0 auto;
+}
+header, footer {
+    background-color: #093157;
+    color: #fef9ff;
+    height: 100px;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+}
+h1 {
+    font-size: 2.5em;
+}
+nav {
+    border-top: 3px dashed #a44a9b;
+    border-bottom: 3px dashed #a44a9b;
+    margin-top: 4px;
+}
+nav a:visited {
+    color: #e4c3ad;
+}
+nav a:hover {
+    background-color: #fef9ff;
+    color: #093157;
+}
+nav a:active {
+    font-weight: bold;
+}
+nav a {
+    background-color: #093157;
+    color: #fef9ff;
+    padding: 8px;
+    border: thin solid #a44a9b;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    width: 100px;
+    float: left;
+}
+
+
+
+.clear-float {
+    clear: both;
+}
+article {
+    margin-bottom: 16px;
+}
+article img {
+    float: left;
+}
+
+.right-float {
+    float: left;
+}

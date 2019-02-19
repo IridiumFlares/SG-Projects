@@ -7,11 +7,9 @@ Most recent revision: 02/17/18
 <html lang="en">
   <head>
     <title>Evan's Portfolio</title>
-    <link rel="stylesheet" href="teststyles.css" type="text/css" />
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
     <style>
-      header {
-        background-color: darkgrey;
-      }
+
     </style>
   </head>
 
@@ -20,90 +18,125 @@ Most recent revision: 02/17/18
       <h1>Portfolio for Evan Hainlin</h1>
     </header>
 
-    <nav class="border">
-      <hr style="border: 2px solid darkviolet;"/>
-      <p>
-        <a href="contact.html">Contact Me</a>
-        <a href="projects.html">Projects</a>
-        <a href="testimonials.html">Scathing Testimonials</a>
-      </p>
-        <hr style="width: 75%; border: thin solid blueviolet;"/>
+    <nav>
+      <p><a href="contact.html">Contact Me</a></p>
+      <p><a href="projects.html">Projects</a></p>
+      <p><a href="testimonials.html">Testimonials</a></p>
+      <div class="clear-float">
+
+      </div>
     </nav>
 
     <section>
-      <article class="border" id="about-me">
+      <article id="about-me">
 
         <h2><em>About Me</em></h2>
-        <img src="images/Evan.jpeg" alt="Portrait of Evan Hainlin" width="300px" height="390px"/>
+        <img src="images/Evan.jpeg" alt="Portrait of Evan Hainlin" width="250px" />
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation <strong>ullamco laboris</strong> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="clear-float"></div>
       </article>
 
       <article id="past-experiences">
         <h2><em>Past Experiences</em></h2>
-        <img src="images/Sandias.jpeg" alt="The Sandia Mountains, Albuquerque, New Mexico" />
-        <table>
-           <caption>Employment History</caption>
-          <tr>
-            <th>Years of Employment</th>
-            <th>Title</th>
-            <th>Company</th>
-          </tr>
-          <tr>
-            <td>2012-2018</td>
-            <td>Server</td>
-            <td>The Bavarian Grill</td>
-          </tr>
-          <tr>
-            <td>2013-2018</td>
-            <td>Student</td>
-            <td>Baylor University</td>
-          </tr>
-          <tr>
-            <td>2014</td>
-            <td>Mechanical Engineering Intern</td>
-            <td>Inogen, Inc.</td>
-          </tr>
-        </table>
 
+        <img src="images/Sandias.jpeg" alt="The Sandia Mountains, Albuquerque, New Mexico" width="250px" />
+        <div class="right-float">
+          <table>
+             <caption>Employment History</caption>
+             <thead>
+               <tr>
+                 <th>Years of Employment</th>
+                 <th>Title</th>
+                 <th>Company</th>
+               </tr>
+               <style>
+                 caption {
+                   font-weight: bold;
+                   font-size: 1.2em;
+                   margin-bottom: 8px;
+                 }
+                 table, th, td {
+                   border: 1px solid #093157;
+                   border-collapse: collapse;
+                   padding: 5px 10px;
+                 }
+                 table {
+                   width: 50%;
+                   margin: auto;
+                 }
+                 tr {
+                   height: 30px;
+                 }
+                 th {
+                   background-color: #A8644F;
+                   color: #f2eded;
+                 }
+                 tr:nth-child(odd) {
+                   background-color: #e4c3ad;
+                 }
+               </style>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>2012-2018</td>
+                 <td>Server</td>
+                 <td>The Bavarian Grill</td>
+               </tr>
+               <tr>
+                 <td>2013-2018</td>
+                 <td>Student</td>
+                 <td>Baylor University</td>
+               </tr>
+               <tr>
+                 <td>2014</td>
+                 <td>Mechanical Engineering Intern</td>
+                 <td>Inogen, Inc.</td>
+               </tr>
+             </tbody>
+          </table>
+        </div>
+        <div class="clear-float"></div>
       </article>
 
       <article id="hobbies">
         <h2><em>Hobbies</em></h2>
-        <img src="images/dsimopho.jpeg" alt="Photo of Evan's Dave Smith Instruments Mopho sythesizer" />
-        <ul>
-          <li>Favorite Musicians</li>
-          <ol>
-            <li>Nai Palm</li>
-            <li>Aphex Twin</li>
-            <li>Robert Glasper</li>
-          </ol>
-          <li>Favorite Authors</li>
-          <ol>
-            <li>Greg Egan</li>
-            <li>Douglas Hofstader</li>
-            <li>Alan Watts</li>
-          </ol>
-        </ul>
-        <ul>
-          <li>Sports</li>
+        <img src="images/dsimopho.jpeg" alt="Photo of Evan's Dave Smith Instruments Mopho sythesizer" width="250px" />
+        <div class="right-float">
           <ul>
-            <li>Football</li>
-            <li>Soccer</li>
-            <li>Hockey</li>
+            <li>Favorite Musicians</li>
+            <ol>
+              <li>Nai Palm</li>
+              <li>Aphex Twin</li>
+              <li>Robert Glasper</li>
+            </ol>
+            <li>Favorite Authors</li>
+            <ol>
+              <li>Greg Egan</li>
+              <li>Douglas Hofstader</li>
+              <li>Alan Watts</li>
+            </ol>
           </ul>
-          <li>Outdoor Activities</li>
           <ul>
-            <li>Hiking</li>
-            <li>Snowboarding</li>
-            <li>Recording natural audio</li>
+            <li>Sports</li>
+            <ul>
+              <li>Football</li>
+              <li>Soccer</li>
+              <li>Hockey</li>
+            </ul>
+            <li>Outdoor Activities</li>
+            <ul>
+              <li>Hiking</li>
+              <li>Snowboarding</li>
+              <li>Recording natural audio</li>
+            </ul>
           </ul>
-        </ul>
+        </div>
+        <div class="clear-float"></div>
       </article>
     </section>
 
-    <footer style="background-color: fuchsia">
-      <hr />
+    <footer>
       <p>&copy; 2019 Evan Hainlin. All rights reserved.</p>
     </footer>
 

@@ -3,17 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>Contact Me</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="styles/form.css" type="text/css" />
   </head>
   <body>
-    <h1>Contact Me</h1>
-
-    <hr />
+    <header>
+      <h1>Contact Me</h1>
+    </header>
 
     <nav>
-      <a href="index.html">Home</a>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="projects.html">Projects</a></p>
+      <p><a href="testimonials.html">Scathing Testimonials</a></p>
+      <div class="clear-float">
     </nav>
-
-    <hr />
 
     <h2>Information Request</h2>
 
@@ -31,10 +34,10 @@
         <option value="morning">Morning (Between 8am and 12pm Central Time)</option>
         <option value="afternoon">Afternoon (Between 12pm and 5pm Central Time)</option>
         <option value="night">Night (Between 5pm and 10pm Central Time)</option>
-      </select>
+      </select> <br />
 
       <fieldset>
-        <legend>I am interested in (pick all that apply):</legend> <br />
+        <legend>I am interested in (pick all that apply):</legend>
         <input type="checkbox" id="frontEnd" name="interest" value="frontEnd">
         <label for="frontEnd">Front End Web Development</label> <br />
         <input type="checkbox" id="backEnd" name="interest" value="backEnd">
@@ -59,7 +62,7 @@
     </form>
 
     <footer>
-
+      <p>&copy; 2019 Evan Hainlin. All rights reserved.</p>
     </footer>
   </body>
 </html>
