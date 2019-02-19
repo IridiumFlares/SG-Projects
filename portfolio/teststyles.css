@@ -1,0 +1,13 @@
+body {
+  background-color: lightblue;
+}
+header, footer {
+  color: white;
+  background-color: darkgreen;
+}
+.border {
+  border: thick solid blue;
+}
+#past-experiences  {
+  border: thick dashed orange;
+}

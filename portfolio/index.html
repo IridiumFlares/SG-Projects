@@ -7,6 +7,12 @@ Most recent revision: 02/17/18
 <html lang="en">
   <head>
     <title>Evan's Portfolio</title>
+    <link rel="stylesheet" href="teststyles.css" type="text/css" />
+    <style>
+      header {
+        background-color: darkgrey;
+      }
+    </style>
   </head>
 
   <body>
@@ -14,22 +20,21 @@ Most recent revision: 02/17/18
       <h1>Portfolio for Evan Hainlin</h1>
     </header>
 
-      <hr />
-
-    <nav>
+    <nav class="border">
+      <hr style="border: 2px solid darkviolet;"/>
       <p>
         <a href="contact.html">Contact Me</a>
         <a href="projects.html">Projects</a>
         <a href="testimonials.html">Scathing Testimonials</a>
       </p>
+        <hr style="width: 75%; border: thin solid blueviolet;"/>
     </nav>
 
-      <hr />
     <section>
-      <article  id="about-me">
+      <article class="border" id="about-me">
 
         <h2><em>About Me</em></h2>
-        <img src="images/Evan.jpeg" alt="Portrait of Evan Hainlin" width="300px" height="400px"/>
+        <img src="images/Evan.jpeg" alt="Portrait of Evan Hainlin" width="300px" height="390px"/>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <p>Ut enim ad minim veniam, quis nostrud exercitation <strong>ullamco laboris</strong> nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </article>
@@ -60,6 +65,8 @@ Most recent revision: 02/17/18
             <td>Inogen, Inc.</td>
           </tr>
         </table>
+
+      </article>
 
       <article id="hobbies">
         <h2><em>Hobbies</em></h2>
@@ -95,7 +102,7 @@ Most recent revision: 02/17/18
       </article>
     </section>
 
-    <footer>
+    <footer style="background-color: fuchsia">
       <hr />
       <p>&copy; 2019 Evan Hainlin. All rights reserved.</p>
     </footer>
