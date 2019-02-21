@@ -1,0 +1,59 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  background-color: #795548;
+  color: #ffffff;
+}
+section {
+  background-color: #a98274;
+}
+header {
+  background-color: #4b2c20;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 10px 30px 10px;
+}
+nav {
+    border-top: 3px solid #4b2c20;
+    border-bottom: 3px solid #4b2c20;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+nav .btn:visited {
+    background-color: #c9a294;
+    color: #4b2c20;
+}
+nav .btn:hover {
+    background-color: #e9c5b8;
+    color: #091117;
+    font-weight: bolder;
+    text-decoration: none;
+}
+nav .btn:active {
+    font-weight: normal;
+}
+nav .btn {
+    background-color: #4b2c20;
+    color: #fef9ff;
+    padding: 8px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 20px;
+    width: 120px;
+    float: left;
+}
+
+footer {
+  background-color: #4b2c20;
+  color: #ffffff;
+  text-align: center;
+  padding: 30px 10px 30px 10px;
+}
+
+.description p {
+  text-align: center;
+  padding-top: 10px;
+}
+.clear-float {
+    clear: both;
+}
