@@ -1,59 +1,81 @@
 body {
   font-family: helvetica, arial, sans-serif;
-  background-color: #795548;
-  color: #ffffff;
+  background-color: #694970;
+  color: #faecff;
 }
-section {
+#main-section {
+  padding: 20px 0px 20px 0px;
   background-color: #a98274;
 }
-header {
-  background-color: #4b2c20;
-  color: #ffffff;
+div.page-header {
+  background-color: #4b3c50;
+  color: #faecff;
   text-align: center;
+  margin: auto;
   padding: 30px 10px 30px 10px;
+
+}
+div.header h1 {
+  font-size: 2.5em;
 }
 nav {
-    border-top: 3px solid #4b2c20;
-    border-bottom: 3px solid #4b2c20;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    margin: 4px auto;
+    align: middle;
 }
-nav .btn:visited {
+nav .nav-link:visited {
     background-color: #c9a294;
     color: #4b2c20;
 }
-nav .btn:hover {
+nav .nav-link:hover {
     background-color: #e9c5b8;
     color: #091117;
     font-weight: bolder;
     text-decoration: none;
 }
-nav .btn:active {
+nav .nav-link:active {
     font-weight: normal;
 }
-nav .btn {
+nav .nav-link {
+
     background-color: #4b2c20;
-    color: #fef9ff;
-    padding: 8px;
+    color: #eadcfe;
+    padding: 4px;
     text-decoration: none;
     text-align: center;
     display: block;
-    margin: 20px;
+    margin: 10px;
     width: 120px;
     float: left;
+    align: middle;
 }
 
 footer {
-  background-color: #4b2c20;
-  color: #ffffff;
+  height: 100px;
+  background-color: #4b3c50;
+  color: #faecff;
   text-align: center;
-  padding: 30px 10px 30px 10px;
+  padding: 30px 0 30px 0;
 }
 
+.footer-copyright{
+  background-color: #2b1c40;
+}
 .description p {
   text-align: center;
-  padding-top: 10px;
+  width: 70%;
+  margin: auto;
+}
+.description p.lead {
+  padding-top: 20px;
+  margin: auto;
 }
 .clear-float {
-    clear: both;
+  clear: both;
+}
+.form-control {
+  width: 350px;
+  margin: auto;
+}
+textarea {
+  background-color: #694970;
 }

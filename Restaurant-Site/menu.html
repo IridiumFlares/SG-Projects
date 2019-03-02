@@ -4,15 +4,22 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/restaurantStyles.css" type=text/css />
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Menu</title>
     <style>
+      .row {
+        padding: 10px;
+      }
       .col-4 {
         text-align: center;
+        margin: 0 auto 0 auto;
       }
       .price {
         border: 2px solid #4b2c20;
-        width: auto;
+        width: 140px;
+        margin: auto;
+        padding: 5px;
+        background-color: #b4937d;
       }
       table {
         align: middle;
@@ -31,12 +38,14 @@
         height: 30px;
       }
       th {
-        background-color: #4b2c20;
+        background-color: #4b3c50;
         color: #f2eded;
         text-align: center;
+        font-size: 1.5em;
+        font-weight: normal;
       }
       tr:nth-child(1) {
-        background-color: #e4c3ad;
+        background-color: #d4b39d;
       }
       tr:nth-child(2) {
         background-color: #c4a38d;
@@ -45,43 +54,54 @@
         background-color: #a4836d;
       }
       tr:nth-child(4) {
-        background-color: #f4f3cd;
+        background-color: #e4e3bd;
         color: #4b2c20;
+      }
+      h3 {
+        font-size: 1.5em;
+
+      }
+      #headline {
+
       }
     </style>
   </head>
   <body>
-    <header>
+    <div class="page-header">
       <h1>Modal Cafe</h1>
-    </header>
+      <h3 id="temp-notice">New Dallas Location Coming March 3<sup>rd</sup>!</h3>
+    </div>
 
-    <nav>
-      <a class="btn" href="index.html">Home</a>
-      <a class="btn" href="menu.html">Menu</a>
-      <a class="btn" href="contact.html">Contact Us</a>
+
+    <nav class="nav nav-tabs justify-content-center">
+      <a class="nav-link" href="index.html"><span class="fas fa-home"></span></a>
+      <a class="nav-link active" href="menu.html">Menu</a>
+      <a class="nav-link" href="contact.html">Contact Us</a>
       <div class="clear-float"></div>
     </nav>
+
 
     <div class="container-fluid">
       <div class="row">
         <div class="col-4">
           <h3>Phrygian Pasteries</h3>
-          <p>Freshly Baked: <br />
-            An assortment of baked pasteries, rotating daily! From flakey and fruit-filled to glazed and and powdered, we have your favorite! <br />
-            Available hot or cold. <br>
-            <section class="price">$3.00 - $5.00</section></p>
+          <p class="lead" id="headline">Freshly Baked:</p>
+          <p>An assortment of baked pasteries, rotating daily! From flakey and fruit-filled to glazed and powdered, we have your favorite! <br />
+            Available hot or cold.</p>
+            <section class="price">$3.00 - $5.00</section>
         </div>
 
         <div class="col-4">
           <h3>Lydian's Lunchwich</h3>
-          <p>Made to order: <br />
-            Choose between a variety of fresh deli meats, cheeses, vegetables, and condiments, served on a brioche bun! All ingredients are prepared fresh each morning! <br />
+          <p class="lead" id="headline">Made to order:</p>
+          <p>Choose between a variety of fresh deli meats, cheeses, vegetables, and condiments, served on a brioche bun! All ingredients are prepared fresh each morning! <br />
             Available toasted or cold. <br>
             <section class="price">$5.75</section></p>
         </div>
 
         <div class="col-4">
           <h3>Super Fruit Salad</h3>
+          <p class="lead" id="headline">If you want a bowl of fruit:</p>
           <p>Consisting of at least 8 different kinds of in-season fruits (grown locally!), this isn't a simple side salad. <br />
           <section class="price">$4.00</section></p>
         </div>
@@ -90,16 +110,16 @@
       <div class="row">
         <div class="col-4">
           <h3>The Travesty</h3>
-          <p>Heavy on the cheese: <br />
-            Our thin crust pizza, topped with pineapple! Add fresh vegetables for $0.50 a topping. Since we are living in a polarized world, we figure we should have a polarizing pizza. <br />
-          <section class="price">10in. - $6.50 | 12in. - $8.00 | 14in - $9.50</section></p>
+          <p class="lead" id="headline">Heavy on the cheese:</p>
+          <p>Our thin crust pizza, topped with pineapple! Add fresh vegetables for $0.50 a topping. Since we are living in a polarized world, we figure we should have a polarizing pizza. <br />
+          <section class="price">10in. - $6.50<br />12in. - $8.00<br />14in - $9.50</section></p>
         </div>
 
         <div class="col-4">
           <h3>The Classic</h3>
-          <p>A fresh take on a tasty tradition: <br />
-            Our thin crust pizza, topped with pepperoni and cheese. Add fresh vegetables for $0.50 a topping. <br />
-          <section class="price">10in. - $6.50 | 12in. - $8.00 | 14in - $9.50</section></p>
+          <p class="lead" id="headline">A fresh take on a tasty tradition:</p>
+          <p>Our thin crust pizza, topped with pepperoni and cheese. Add fresh vegetables for $0.50 a topping. <br />
+          <section class="price">10in. - $6.50<br />12in. - $8.00<br />14in - $9.50</section></p>
         </div>
       </div>
     </div>
@@ -128,10 +148,16 @@
           </table>
     </div>
 
-    <footer>
-      <p>Glissando Drive, Plano, Texas, 75080 <br />
-        (214) 555-1337
-      </p>
+    <footer class="page-footer">
+      <div class="container-fluid text-center">
+        <p>Glissando Drive, Plano, Texas, 75080 <br />
+          (214) 555-1337
+        </p>
+      </div>
+      <hr style="border:2px solid #efdfef;margin:auto;width:50%"/>
+      <div class="footer-copyright text-center py-3">© 2019 Copyright
+        <kbd>Evan Hainlin</kbd>
+      </div>
     </footer>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

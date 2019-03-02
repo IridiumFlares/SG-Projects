@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+Created by: Evan Hainlin
+Date Created: 02/26/2019
+Last Updated:
+  -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lucky Sevens</title>
+    <script type="text/javascript" src="luckySevens.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+
+       div .form-control {
+        align: middle;
+        text-align: clear;
+        margin-right: auto;
+      }
+
+      label {
+        align: middle;
+        margin-left: auto;
+        padding: 5px;
+      }
+
+      #btn {
+        text-align: middle;
+        margin: 0 auto;
+        padding: 5px;
+      }
+
+      #resultsTable {
+        border: 2px solid darkgrey;
+        align: middle;
+        margin: auto;
+        padding: 5px;
+      }
+
+      tr {
+        height: 25px;
+        border: 2px solid darkgrey;
+      }
+
+      #tableDescription {
+        padding: 5px 5px 5px 5px;
+      }
+
+      #tableValue{
+        padding: 5px 5px 5px 45px;
+        text-align: left;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+
+    <header style="text-align:center;">
+      <h1>Lucky Sevens</h1>
+    </header>
+
+    <div class="container">
+      <form class="form" id="luckySevens" onsubmit="return play();">
+        <div class="form-group form-inline">
+          <label for="input" class="form-label">Starting Bet:</label>
+          <input type="number" id="input" class="form-control" style="width:15%;">
+        </div>
+        <div class="text-center">
+        <button type="submit" name="Play">Play</button>
+        </div>
+      </form>
+
+      <hr />
+
+      <div id="results" class="table-striped" style="display:none;">
+        <h2 class="text-center">Results</h2>
+        <table id="resultsTable">
+          <tr>
+            <td id="tableDescription">Starting Bet</td>
+            <td id="tableValue"><span id="startingBet"></span></td>
+          </tr>
+          <tr>
+            <td id="tableDescription">Total Rolls Before Going Broke</td>
+            <td id="tableValue"><span id="totalRolls"></span></td>
+          </tr>
+          <tr>
+            <td id="tableDescription">Highest Amount Won</td>
+            <td id="tableValue"><span id="maxAmount"></span></td>
+          </tr>
+          <tr>
+            <td  id="tableDescription">Roll Count At Highest Win</td>
+            <td id="tableValue"><span id="maxCount"></span></td>
+          </tr>
+        </table>
+
+      </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
