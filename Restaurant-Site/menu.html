@@ -6,9 +6,17 @@
     <link rel="stylesheet" href="styles/restaurantStyles.css" type=text/css />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Menu</title>
+    <noscript>
+      <div id="noscript-message">
+        Please enable JavaScript for full site functionality.
+      </div>
+    </noscript>
     <style>
       .row {
         padding: 10px;
+      }
+      .container-fluid {
+        margin: auto;
       }
       .col-4 {
         text-align: center;
@@ -24,7 +32,6 @@
       table {
         align: middle;
         margin: auto;
-        border: 2px solid #4b2c20;
       }
       caption {
         font-weight: bold;
@@ -33,6 +40,7 @@
       }
       table, th, td {
         padding: 5px 10px;
+        border: 2px solid black;
       }
       tr {
         height: 30px;
@@ -55,21 +63,29 @@
       }
       tr:nth-child(4) {
         background-color: #e4e3bd;
-        color: #4b2c20;
+        color: #2b0c00;
       }
       h3 {
         font-size: 1.5em;
-
+      }
+      #additional-drinks {
+        text-align: center;
+        background: #46a868;
+        color: white;
+      }
+      .table-responsive {
+        width: 500px;
+        margin: auto;
       }
       #headline {
-
+        font-style: oblique;
       }
     </style>
   </head>
   <body>
     <div class="page-header">
       <h1>Modal Cafe</h1>
-      <h3 id="temp-notice">New Dallas Location Coming March 3<sup>rd</sup>!</h3>
+      <h4 id="temp-notice">New Dallas Location Coming March 3<sup>rd</sup>!</h4>
     </div>
 
 
@@ -84,15 +100,15 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-4">
-          <h3>Phrygian Pasteries</h3>
+          <h3>Lydian's Pasteries</h3>
           <p class="lead" id="headline">Freshly Baked:</p>
           <p>An assortment of baked pasteries, rotating daily! From flakey and fruit-filled to glazed and powdered, we have your favorite! <br />
-            Available hot or cold.</p>
+            Available toasted or cold.</p>
             <section class="price">$3.00 - $5.00</section>
         </div>
 
         <div class="col-4">
-          <h3>Lydian's Lunchwich</h3>
+          <h3>Phrygian Panini</h3>
           <p class="lead" id="headline">Made to order:</p>
           <p>Choose between a variety of fresh deli meats, cheeses, vegetables, and condiments, served on a brioche bun! All ingredients are prepared fresh each morning! <br />
             Available toasted or cold. <br>
@@ -144,6 +160,9 @@
             <tr>
               <td>Ionian Coffee Float</td>
               <td>$5.50</td>
+            </tr>
+            <tr>
+              <td id="additional-drinks" colspan="2">Many varieties of Soft Drinks and Teas offered daily!</td>
             </tr>
           </table>
     </div>

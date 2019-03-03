@@ -28,9 +28,10 @@ function clearErrors() {
 // }
 
 function validateInput(input) {
-  if(input < 1) {
-    alert("The starting bet must be a positive number, with a value of at least 1.");
-    document.forms["luckySevens"]["input"].parentElement.className = "form-group form-inline has-error";
+  if(input < 0) {
+    alert("The starting bet must be a positive number, with a value of at least 0.");
+    document.forms["luckySevens"]["input"].parent543Element.className = "form-group form-inline has-error";
+    document.getElementById("res")
     document.forms["luckySevens"]["input"].focus;
     return false;
   }

@@ -7,22 +7,14 @@
     <link rel="stylesheet" href="styles/restaurantStyles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <title>Contact Us</title>
-    <style>
-      form {
-        text-align: center;
-        padding: 10px;
-      }
-      .form-group {
-        text-align: center;
-        margin: auto;
-      }
-      legend {
-        font-size: 0.97em;
-      }
-      formResponse {
-        text-align: center;
-        padding: 10px;
-        height:100%;
+    <noscript>
+      <div id="noscript-message">
+        Please enable JavaScript for full site functionality.
+      </div>
+    </noscript>
+    <style media="screen">
+      a {
+        color: yellow;
       }
     </style>
   </head>
@@ -30,7 +22,7 @@
   <body>
     <div class="page-header">
       <h1>Modal Cafe</h1>
-      <h3 id="temp-notice">New Dallas Location Coming March 3<sup>rd</sup>!</h3>
+      <h4 id="temp-notice">New Dallas Location Coming March 3<sup>rd</sup>!</h4>
     </div>
 
 
@@ -40,15 +32,38 @@
       <a class="nav-link active" href="contact.html">Contact Us</a>
       <div class="clear-float"></div>
     </nav>
-    <div class="inputForm">
-      <form id="contactForm" onsubmit="return validateInput()" style="display:block;" novalidate>
 
-        <label for="name" id="name"><strong>Name:</strong></label>
-        <input type="text" class="form-control" id="name" name="name"> <br />
-        <label for="email" id="email"><strong>Email:</strong></label>
-        <input type="text" class="form-control" id="email" name="email"> <br />
-        <label for="phone" id="phone">Phone:</label>
-        <input type="number" class="form-control" id="phone" name="phone"> <br />
+    <div id="formResponse">
+      <h2>Thank you for reaching out.</h2>
+      <p>We'll get back to you within the next few days!</p>
+      <p><small>(click <strong><a href="contact.html">here</a></strong> to reach out again)</small>
+
+    </div>
+
+    <div id="inputForm">
+      <form id="contactForm" class="container needs-validation" style="display:block;" novalidate>
+        <div class="form-group">
+          <label for="name" id="name"><strong>Name:</strong></label>
+          <input type="text" class="form-control" id="name" name="name" required>
+          <div class="invalid-feedback">
+            Please enter your name above.
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email" id="email"><strong>Email:</strong></label>
+          <input type="text" class="form-control" id="email" name="email" required>
+          <div class="invalid-feedback">
+            Please enter your email above.
+          </div>
+        </div>
+
+        <div class"form-group">
+          <label for="phone" id="phone">Phone:</label>
+          <input type="number" class="form-control" id="phone" name="phone" required>
+          <div class="invalid-feedback">
+            Please enter your phone number above.
+          </div>
+        </div>
 
         <label for="inquiryReason" id="inquiryReason">Reason for Inquiry:</label>
         <select id="inquiryReason" name="inquiryReason">
@@ -57,8 +72,9 @@
           <option value="feedback">Feedback</option>
           <option value="other">Other</option>
         </select> <br />
+
         <label for="additionalInfo" id="additionalInfo">Additional Information</label> <br />
-        <textarea name="additionalInfo" class="form-control" rows="8" cols="80"></textarea> <br />
+        <textarea name="additionalInfo" rows="8" cols="80"></textarea> <br />
 
         <fieldset>
           <legend>Have you been to this restaurant?</legend>
@@ -87,11 +103,7 @@
     </div>
 
 
-    <div class="formResponse" style="display:none;">
-      <h2>Thank you for reaching out.</h2>
-      <p>We'll get back to you within the next few days!</p>
 
-    </div>
 
     <footer class="page-footer">
       <div class="container-fluid text-center">
@@ -107,5 +119,29 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+      (function() {
+        'use strict';
+        document.getElementById("formResponse").style.display = "none";
+        window.addEventListener('load', function() {
+          let forms = document.getElementsByClassName('needs-validation');
+          let validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              } else {
+                document.getElementById("formResponse").style.display = "block";
+                document.getElementById("inputForm").style.display = "none";
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+
+          });
+        }, false);
+      })();
+    </script>
   </body>
 </html>

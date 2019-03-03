@@ -13,7 +13,28 @@ div.page-header {
   text-align: center;
   margin: auto;
   padding: 30px 10px 30px 10px;
-
+}
+#noscript-message {
+  margin: auto;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+.d-block {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  height: 200px;
+  background-color: #a982b4
+}
+#spring {
+  font-weight: bold;
+}
+#img-slide {
+  opacity: 0.5;
+}
+span.fas {
+  font-size: 1.3em;
 }
 div.header h1 {
   font-size: 2.5em;
@@ -76,6 +97,42 @@ footer {
   width: 350px;
   margin: auto;
 }
+.was-validated .form-control:invalid {
+  border: 5px solid red;
+}
+.was-validated .form-control:valid {
+  border: 5px solid green;
+}
+.invalid-feedback {
+  font-size: 1em;
+  color: #ff6000;
+}
 textarea {
-  background-color: #694970;
+  background-color: #ffffff;
+}
+form {
+  text-align: center;
+  padding: 10px;
+}
+.form-group {
+  text-align: center;
+  margin: auto;
+}
+legend {
+  font-size: 0.97em;
+}
+formResponse {
+  text-align: center;
+  padding: 10px;
+  height:100%;
+}
+#inquiryReason {
+  padding-top: 16px;
+}
+#formResponse {
+  padding: 10px;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  color: white;
 }
