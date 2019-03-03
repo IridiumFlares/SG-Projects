@@ -3,7 +3,7 @@ Repo containing all relevant coursework and projects completed for the Genesis10
 
 Contents:
 1. Code-Along-Exercises
-    Various exercises encountered while working through the HTML/CSS/JS course.
+  *  Various exercises encountered while working through the HTML/CSS/JS course.
 2. Lucky-Sevens
     First part of the final project. Open luckySevens.html to run.
 3. portfolio
